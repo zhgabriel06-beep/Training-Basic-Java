@@ -1,13 +1,29 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-  //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-  // to see how IntelliJ IDEA suggests fixing it.
-  IO.println(String.format("Hello and welcome!"));
+import java.util.ArrayList;
+import java.util.Scanner;
 
-  for (int i = 1; i <= 5; i++) {
-    //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-    // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-    IO.println("i = " + i);
-  }
+public class Main {
+    public static  void main(String[] args) {
+        double media = 0;
+        int i = 0;
+        double nota;
+        int contador = 0;
+        ArrayList<Double> lista = new ArrayList<>();
+        for(i = 0; i < 3; i++){
+            Scanner input = new Scanner(System.in);
+            System.out.println("Digite as nota dos alunos ");
+            nota = input.nextDouble();
+            lista.add(nota);
+            media += nota;
+        }
+        media /= 3;
+
+        for(i = 0; i < 3; i++){
+            if(lista.get(i) > media) {
+                contador++;
+            }
+            System.out.println("Media dos alunos foram"+ media);
+            System.out.println("Ficaram " + contador + " Acima da media");
+        }
+    }
 }
+

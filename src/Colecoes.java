@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Lista {
+public class Colecoes {
     public static void main(String[] args){
         List<String> funcionarios = new ArrayList<>();
         funcionarios.add("Joao");
@@ -27,5 +27,15 @@ public class Lista {
         pessoas2.add("Gabriel");
 
         System.out.println(pessoas2);
+
+        Map<Integer, String> clientes = new HashMap<>();
+        clientes.put(1, "Pedro");
+        clientes.put(2, "Joao");
+        clientes.put(1, "Gabriel");
+        // reescreve em cima do valor da chave
+        System.out.println(clientes.get(1));
+        // = Gabriel. Ele busca pela chave
+        pessoas2.size();
+        System.out.println(pessoas2.size());
     }
 }

@@ -1,7 +1,7 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Math1 {
+public class ExpressoesRegulares {
     public static void main(String[] args) {
         // expressões regulares
         String texto = "Meu email é zhgabriel@gmail.com";
